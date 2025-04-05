@@ -1,3 +1,67 @@
 <resources>
     <string name="app_name">app-tuba</string>
+
+    <!-- Strings da tela principal -->
+    <string name="main_title">Sistema de Gerenciamento</string>
+    <string name="manage_client">Criar ou Atualizar Cliente</string>
+    <string name="client_section_title">Gerenciamento de Clientes</string>
+    <string name="create_client">Criar Cliente</string>
+    <string name="update_client">Atualizar Cliente</string>
+
+    <!-- Strings do formulário de cliente -->
+    <string name="add_client">Criar Cliente</string>
+    <string name="edit_client">Editar Cliente</string>
+    <string name="client_deleted">Deletar Cliente</string>
+    <string name="client_name">Nome</string>
+    <string name="client_address">Endereço</string>
+    <string name="client_cpf_cnpj">CPF/CNPJ</string>
+    <string name="client_email">Email</string>
+    <string name="client_phone">Telefone</string>
+    <string name="client_request_nf">Solicita Nota Fiscal</string>
+    <string name="client_blocked">Bloqueado</string>
+    <string name="select_client_to_update">Selecionar Cliente para Atualizar</string>
+    <string name="car_plates">Placas de Carro</string>
+    <string name="add_car_plate">Adicionar Placa</string>
+    <string name="manage_car_plates">Gerenciar Placas</string>
+    <string name="payment_method">Forma de Pagamento</string>
+
+    <!-- Strings gerais -->
+    <string name="save">Salvar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="select_client">Selecionar Cliente</string>
+    <string name="search_client">Buscar por nome ou CPF/CNPJ</string>
+
+    <!-- Strings da tela de busca de clientes -->
+    <string name="search_client_title">Buscar Cliente</string>
+    <string name="search_results">Resultados da busca</string>
+    <string name="no_results_found">Nenhum resultado encontrado</string>
+    <string name="plates_prefix">Placas: </string>
+
+    <!-- Strings do diálogo de placas de carro -->
+    <string name="car_plate_hint">Placa do Veículo</string>
+    <string name="registered_plates">Placas Cadastradas</string>
+    <string name="no_plates_registered">Nenhuma placa cadastrada</string>
+
+    <!-- Mensagens de validação -->
+    <string name="error_name_required">Nome é obrigatório</string>
+    <string name="error_cpf_cnpj_required">CPF/CNPJ é obrigatório</string>
+    <string name="error_cpf_cnpj_invalid">CPF/CNPJ inválido</string>
+    <string name="error_email_invalid">Email inválido</string>
+    <string name="error_car_plate_invalid">Placa de carro inválida</string>
+    <string name="error_car_plate_exists">Esta placa já foi adicionada</string>
+
+    <!-- Mensagens de confirmação -->
+    <string name="confirm_delete_client">Tem certeza que deseja excluir este cliente?</string>
+    <string name="confirm_delete_car_plate">Tem certeza que deseja remover esta placa?</string>
+    <string name="client_saved">Cliente salvo com sucesso</string>
+    <string name="client_updated">Cliente atualizado com sucesso</string>
+    <string name="client_deleted_success">Cliente excluído com sucesso</string>
+
+    <!-- Mensagens de erro -->
+    <string name="error_saving_client">Erro ao salvar cliente</string>
+    <string name="error_updating_client">Erro ao atualizar cliente</string>
+    <string name="error_deleting_client">Erro ao excluir cliente</string>
+    <string name="error_loading_client">Erro ao carregar cliente</string>
+    <string name="error_database_connection">Erro de conexão com o banco de dados</string>
+
 </resources>
