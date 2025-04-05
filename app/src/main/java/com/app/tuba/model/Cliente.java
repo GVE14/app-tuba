@@ -15,6 +15,8 @@ public class Cliente {
     private Boolean blocked;
     private List<String> carPlate;
 
+    public Cliente() {
+    }
     public Cliente(String id, String name, String adress, String email, String phone, String cpfCnpj, String paymentMethod, Boolean requestNf, Boolean blocked, List<String> carPlate) {
         this.id = id;
         this.name = name;
