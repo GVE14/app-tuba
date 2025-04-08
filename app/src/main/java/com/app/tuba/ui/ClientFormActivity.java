@@ -25,13 +25,11 @@ import java.util.regex.Pattern;
 
 public class ClientFormActivity extends AppCompatActivity {
 
-    private TextView formTitleTextView;
     private TextInputEditText nameEditText, addressEditText, cpfCnpjEditText, emailEditText,
             phoneEditText, paymentMethodEditText;
-    private Button managePlatesButton;
-    private TextView carPlatesPreviewTextView;
+    private TextView carPlatesPreviewTextView, formTitleTextView;
     private CheckBox requestNfCheckBox, blockedCheckBox;
-    private Button cancelButton, saveButton;
+    private Button cancelButton, saveButton, managePlatesButton;
 
     private final List<String> carPlates = new ArrayList<>();
     private FirebaseFirestore firestore;
@@ -183,7 +181,7 @@ public class ClientFormActivity extends AppCompatActivity {
     }
 
     private void salvarClienteNoFirebase() {
-        String id = firestore.collection("clientes").document().getId();
+        String id = firestore.collection("cliente").document().getId();
 
         Cliente cliente = new Cliente(
                 id,
@@ -198,7 +196,7 @@ public class ClientFormActivity extends AppCompatActivity {
                 new ArrayList<>(carPlates)
         );
 
-        firestore.collection("clientes")
+        firestore.collection("cliente")
                 .document(id)
                 .set(cliente)
                 .addOnSuccessListener(unused -> {
