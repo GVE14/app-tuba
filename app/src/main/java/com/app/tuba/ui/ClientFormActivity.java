@@ -50,13 +50,7 @@ public class ClientFormActivity extends AppCompatActivity {
 
         managePlatesButton.setOnClickListener(v -> showPlatesDialog());
 
-        saveButton.setOnClickListener(v -> {
-            if (validateFields()) {
-                salvarClienteNoFirebase();
-            } else {
-                Toast.makeText(this, "Preencha o formulário corretamente", Toast.LENGTH_SHORT).show();
-            }
-        });
+        saveButton.setOnClickListener(v -> salvarClienteNoFirebase());
 
         cancelButton.setOnClickListener(v -> finish());
     }
