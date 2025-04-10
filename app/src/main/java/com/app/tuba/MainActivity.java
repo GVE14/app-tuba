@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String EXTRA_MODE = "MODE";
     private static final String MODE_CREATE = "CREATE";
-    private static final String MODE_UPDATE = "UPDATE";
 
     private Button createClientButton, searchClientButton, updateClientButton;
 
@@ -33,18 +32,13 @@ public class MainActivity extends AppCompatActivity {
     private void initializeUI() {
         // Componentes da UI
         TextView mainTitleTextView = findViewById(R.id.mainTitleTextView);
-        TextView clientSectionTitleTextView = findViewById(R.id.clientSectionTitleTextView);
         createClientButton = findViewById(R.id.createClientButton);
-        updateClientButton = findViewById(R.id.updateClientButton);
         searchClientButton = findViewById(R.id.searchClientButton);
     }
 
     private void setupButtonListeners() {
         // Botão para criar cliente
         createClientButton.setOnClickListener(v -> navigateToClientForm(MODE_CREATE));
-
-        // Botão para atualizar cliente
-        updateClientButton.setOnClickListener(v -> navigateToClientForm(MODE_UPDATE));
 
         // Botão para buscar cliente
         searchClientButton.setOnClickListener(v -> navigateToClientSearch());

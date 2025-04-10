@@ -2,22 +2,38 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal"
-    android:padding="8dp"
-    android:gravity="center_vertical">
+    android:layout_marginBottom="8dp">
 
-    <TextView
-        android:id="@+id/carPlateTextView"
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/TextInputLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:layout_weight="1"
-        android:textSize="16sp" />
+        android:hint="Placa do Veículo">
 
-    <ImageButton
-        android:id="@+id/removePlateButton"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:background="?attr/selectableItemBackgroundBorderless"
-        android:contentDescription="Remover placa"
-        android:src="@android:drawable/ic_menu_delete" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/carPlateEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:inputType="textCapCharacters"
+
+            android:maxLength="8" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        style="@style/PrimaryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:src="@android:drawable/ic_menu_delete"
+        app:tint="@android:color/white"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="10dp"/>
 </LinearLayout>
