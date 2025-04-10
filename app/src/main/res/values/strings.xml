@@ -2,7 +2,7 @@
     <string name="app_name">app-tuba</string>
 
     <!-- Strings da tela principal -->
-    <string name="main_title">Sistema de Gerenciamento</string>
+    <string name="main_title">Sistema Mospel</string>
     <string name="manage_client">Criar ou Atualizar Cliente</string>
     <string name="client_section_title">Gerenciamento de Clientes</string>
     <string name="create_client">Criar Cliente</string>
@@ -10,8 +10,8 @@
 
     <!-- Strings do formulário de cliente -->
     <string name="add_client">Criar Cliente</string>
-    <string name="edit_client">Editar Cliente</string>
-    <string name="client_deleted">Deletar Cliente</string>
+    <string name="edit_client">Editar</string>
+    <string name="client_deleted">Deletar</string>
     <string name="client_name">Nome</string>
     <string name="client_address">Endereço</string>
     <string name="client_cpf_cnpj">CPF/CNPJ</string>
@@ -21,8 +21,8 @@
     <string name="client_blocked">Bloqueado</string>
     <string name="select_client_to_update">Selecionar Cliente para Atualizar</string>
     <string name="car_plates">Placas de Carro</string>
-    <string name="add_car_plate">Adicionar Placa</string>
-    <string name="manage_car_plates">Gerenciar Placas</string>
+    <string name="add_car_plate">Adicionar</string>
+    <string name="manage_car_plates">Gerenciar</string>
     <string name="payment_method">Forma de Pagamento</string>
 
     <!-- Strings gerais -->
