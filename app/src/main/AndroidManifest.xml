@@ -33,6 +33,16 @@
                 android:value=".MainActivity" />
         </activity>
 
+        <activity
+            android:name=".ui.ClientSearchActivity"
+            android:exported="false"
+            android:label="@string/search_client_title"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
     </application>
 
 </manifest>

@@ -6,7 +6,6 @@
     <string name="manage_client">Criar ou Atualizar Cliente</string>
     <string name="client_section_title">Gerenciamento de Clientes</string>
     <string name="create_client">Criar Cliente</string>
-    <string name="update_client">Atualizar Cliente</string>
 
     <!-- Strings do formulário de cliente -->
     <string name="add_client">Criar Cliente</string>
@@ -30,6 +29,7 @@
     <string name="cancel">Cancelar</string>
     <string name="select_client">Selecionar Cliente</string>
     <string name="search_client">Buscar por nome ou CPF/CNPJ</string>
+    <string name="update_client">Atualizar Cliente</string>
 
     <!-- Strings da tela de busca de clientes -->
     <string name="search_client_title">Buscar Cliente</string>
